@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { DiretivaNgclassComponent } from './diretiva-ngclass.component';
+import { SampleNgstyleComponent } from './sample-ngstyle.component';
 
-describe('DiretivaNgclassComponent', () => {
-  let component: DiretivaNgclassComponent;
-  let fixture: ComponentFixture<DiretivaNgclassComponent>;
+describe('SampleNgstyleComponent', () => {
+  let component: SampleNgstyleComponent;
+  let fixture: ComponentFixture<SampleNgstyleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DiretivaNgclassComponent ]
+      declarations: [ SampleNgstyleComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DiretivaNgclassComponent);
+    fixture = TestBed.createComponent(SampleNgstyleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

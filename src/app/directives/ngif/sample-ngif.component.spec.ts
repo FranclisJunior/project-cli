@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { DiretivaNgswitchComponent } from './diretiva-ngswitch.component';
+import { SampleNgifComponent } from './sample-ngif.component';
 
-describe('DiretivaNgswitchComponent', () => {
-  let component: DiretivaNgswitchComponent;
-  let fixture: ComponentFixture<DiretivaNgswitchComponent>;
+describe('SampleNgifComponent', () => {
+  let component: SampleNgifComponent;
+  let fixture: ComponentFixture<SampleNgifComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DiretivaNgswitchComponent ]
+      declarations: [ SampleNgifComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DiretivaNgswitchComponent);
+    fixture = TestBed.createComponent(SampleNgifComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

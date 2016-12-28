@@ -1,0 +1,26 @@
+<div class="container">
+
+  <h5>Sample of directive *ngStyle</h5>
+
+  <button class="btn btn-info"
+     [style.backgroundColor]="active ? 'blue': 'gray'"
+     [style.color]="active ? 'white' : 'black'"
+     [style.fontWeight]="active ? 'bold' : 'normal'"
+     (click)="activeButton()">
+    <i *ngIf="active">Active</i>
+    <i *ngIf="!active">Inactive</i>
+  </button>
+
+
+  <button class="btn btn-info"
+          [ngStyle]="{
+             'backgroundColor': active ? 'blue': 'gray',
+             'color': active ? 'white' : 'black',
+             'fontWeight': active ? 'bold' : 'normal'
+          }"
+          (click)="activeButton()">
+    <i [hidden]="!active">Active</i>
+    <i [hidden]="active">Inactive</i>
+  </button>
+
+</div>

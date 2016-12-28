@@ -1,0 +1,19 @@
+<div class="container">
+
+  <h5>Sample directive *ngClass</h5>
+
+  <i class="glyphicon"
+    [class.glyphicon-star]="favorite"
+    [class.glyphicon-star-empty]="!favorite"
+    (click)="favoriteItem()">
+  </i>
+
+  <i class="glyphicon"
+     [ngClass]="{
+      'glyphicon-star' : favorite,
+      'glyphicon-star-empty': !favorite
+     }"
+     (click)="favoriteItem()">
+  </i>
+
+</div>
