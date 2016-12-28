@@ -1,0 +1,26 @@
+<div class="container">
+
+  <h5>Diretiva *ngStyle</h5>
+
+  <button class="btn btn-info"
+     [style.backgroundColor]="buttonAtivo ? 'blue': 'gray'"
+     [style.color]="buttonAtivo ? 'white' : 'black'"
+     [style.fontWeight]="buttonAtivo ? 'bold' : 'normal'"
+     (click)="ative()">
+    <i *ngIf="buttonAtivo">Ativo</i>
+    <i *ngIf="!buttonAtivo">Inativo</i>
+  </button>
+
+
+  <button class="btn btn-info"
+          [ngStyle]="{
+             'backgroundColor': buttonAtivo ? 'blue': 'gray',
+             'color': buttonAtivo ? 'white' : 'black',
+             'fontWeight': buttonAtivo ? 'bold' : 'normal'
+          }"
+          (click)="ative()">
+    <i [hidden]="!buttonAtivo">Ativo</i>
+    <i [hidden]="buttonAtivo">Inativo</i>
+  </button>
+
+</div>
