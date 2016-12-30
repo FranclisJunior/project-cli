@@ -7,11 +7,15 @@ import { MaterializeModule } from 'angular2-materialize';
 
 import { AppComponent } from './app.component';
 
-import { DirectivesModule } from './directives/directives.module'
+import { DirectivesModule } from './directives/directives.module';
+import { AngularPipesComponent } from './pipes/angular-pipes/angular-pipes.component';
+import { CamelcasePipe } from './pipes/camel-case/camelcase.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AngularPipesComponent,
+    CamelcasePipe
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<div class="container">
+
+  <h5>Sample of Angular Pipes</h5>
+
+
+  <div class="card card-block">
+    <p>Title: {{ book.title | uppercase | camelcase}}</p>
+    <p>Stars: {{ book.rating | number:'1.1-1' }}</p>
+    <p>Pages: {{ book.numberPages | number }}</p>
+    <p>Price: {{ book.price | currency:'BRL':true }}</p>
+    <p>Release date: {{ book.releaseDate | date:'dd/MMM/yyyy' }}</p>
+    <p>Url: {{ book.url }}</p>
+  </div>
+
+  <!-- <p>Book: {{ book | json }}</p> -->
+
+</div>
